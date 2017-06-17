@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dota Loading Screen Downloader</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="fileSaver.min.js"></script>
+	<script src="jszip.min.js"></script>
+	<script src="ls.js"></script>
+</head>
+
+<body onLoad="GetInventoryURL()">
+	<h1 class="titel">DOTA 2</h1>
+	<h2 class="subtitel">Loading Screens</h2>
+	<div class="textcontainer">
+		<div class="bordertop">
+			<div id="downloadsetup">
+				<p/>
+				<h3 class="profileInputHint">Enter your steamprofile link, name or id:</h3>
+				<span class="profilelabel">https://steamcommunity.com/id/</span>
+				<input class="profileinput" type="text" id="profilelink" onchange="GetInventoryURL()"><br>
+				<p id="errors" class="errors"></p>
+				<button id="downloadButton" class="downloadBT hide" onclick="StartDownload()">
+					<p id="downloadButtonText" class="downloadBTText" >Download your loading screens</p>
+				</button>
+			</div>
+			<div id="dowloadprogress" class="hide downloadprogress">
+				<p id="progresscounter" class="progresstext">Downloading 0/0</p>
+				<div id="errors2" class="errors">
+				</div>
+				<button id="dlZipBt" class="hide downloadBT" onclick="dlBlob()">
+					<p class="downloadBTText" >Save .zip</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="bgcontainer">
+		<div id="background-image"></div>
+	</div>
+</body>
+
+</html>

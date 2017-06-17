@@ -1,0 +1,163 @@
+const regex_profileFull = /https?:\/\/steamcommunity\.com\/(id|profiles)\/(\w*)\/?/g;
+const regex_onlyName = /^\w*$/;
+var profileName = "";
+var loadingScreenDB = null;
+var lsItems = new Array();
+var prog = 0;
+var total = 0;
+var czip;
+var fetchingProfile = false;
+$.getJSON("loadingscreens.json", function(data) {
+  console.log(data.length + " loading screens in database.");
+  loadingScreenDB = {};
+  $.each(data, function(lsNmbr, loadingscreen) {
+    loadingScreenDB[loadingscreen.Name] = loadingscreen.ImageLink;
+  });
+  RandomizeBackground();
+});
+
+function RandomizeBackground() {
+  var keys = Object.keys(loadingScreenDB);
+  var index = Math.floor(keys.length * Math.random());
+  var bgImgName = keys[index];
+  var bgImg = new Image();
+  bgImg.onload = function() {
+    var bg = $('#background-image');
+    console.log("Setting background image : " + bgImg.src);
+    bg.addClass("background-image")
+    bg.css("background-image", 'url("' + bgImg.src + '")');
+  }
+  bgImg.src = 'out/' + bgImgName + '.jpeg';
+}
+
+function GetInventoryURL(noError = true) {
+  var dlBt = $('#downloadButton');
+  dlBt.addClass("hide");
+  var match = regex_profileFull.exec(profilelink.value);
+  if (match == null) {
+    match = regex_onlyName.exec(profilelink.value);
+    if (match == null) {
+      if (!noError) {
+        errors.innerHTML = 'Invalid profile name or link.';
+      }
+
+      profileName = '';
+    } else {
+      profileName = match[0];
+    }
+  } else {
+    profileName = match[2];
+  }
+
+  if (profileName == '') {
+    if (!noError) {
+      errors.innerHTML = 'Empty or invalid profile name.';
+    }
+  } else {
+    profilelink.value = profileName;
+    errors.innerHTML = null;
+    dlBt.removeClass('hide');
+    console.log('https://steamcommunity.com/id/' + profileName + '/inventory/json/570/2.json');
+  }
+}
+
+
+function GetLoadingScreens() {
+  GetInventoryURL();
+  if (profileName == "") {
+    errors.innerHTML = "Empty or invalid profile name.";
+  } else {
+    var dlText = $("#downloadButtonText")
+    dlText.text("Reading Steam inventory...");
+    fetchingProfile = true;
+    return $.getJSON("https://crossorigin.me/https://steamcommunity.com/id/" + profileName + "/inventory/json/570/2.json", function(data) {
+        if (data.success == true) {
+          $.each(data.rgDescriptions, function(itemid, item) {
+            var isLoadingScreen = false;
+            $.each(item.tags, function(tagid, tag) {
+              if (tag.internal_name == "loading_screen") {
+                isLoadingScreen = true;
+                return false;
+              }
+            });
+            if (isLoadingScreen) {
+              lsItems.push(item.name);
+            }
+          });
+        } else {
+          errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your profile is public.";
+          dlText.text("Download your loading screens");
+          fetchingProfile = false;
+        }
+      })
+      .error(function() {
+        errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your profile is public.";
+        dlText.text("Download your loading screens");
+        fetchingProfile = false;
+        return false;
+      });
+  }
+}
+
+function StartDownload() {
+  if(fetchingProfile) {
+    return;
+  }
+  $('#downloadButton').disabled = true;
+  GetLoadingScreens().done(function() {
+    if (!lsItems || lsItems.length == 0) {
+      $('#downloadButton').disabled = false;
+      return;
+    }
+
+    $('#downloadsetup').addClass('hide');
+    $('#dowloadprogress').removeClass('hide');
+    prog = 0;
+    total = lsItems.length;
+    var zip = new JSZip();
+    $.each(lsItems, function(i, ls) {
+      if (!(ls in loadingScreenDB)) {
+        var errText = "Loading screen " + ls + " not in DB.";
+        $("#erros2").append('<p class="errors">' + errText + '</p>');
+        return true;
+      }
+
+      loadImage('out/' + ls + '.jpeg', zip, ls);
+    });
+  });
+}
+
+function loadImage(url, zip, name) {
+  // Load image via XMLHttpRequest
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.responseType = "arraybuffer";
+  xhr.onerror = alert;
+  xhr.onload = function() {
+    if (xhr.status === 200) process(xhr.response, zip, name);
+    else alert("Error:" + xhr.statusText);
+  };
+  xhr.send();
+}
+
+function process(buffer, zip, name) {
+  var view = new Uint8Array(buffer);
+  zip.file(name + '.jpeg', view, {
+    binary: true
+  });
+  $("#progresscounter").text("Downloading " + (++prog) + "/" + total);
+  if (prog == total) {
+    czip = zip;
+    dlBlob();
+  }
+}
+
+function dlBlob() {
+  czip.generateAsync({
+    type: "blob"
+  }).
+  then(function(content) {
+    saveAs(content, "loadingScreens.zip");
+    $("#dlZipBt").removeClass("hide");
+  })
+}
