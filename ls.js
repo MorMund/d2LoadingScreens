@@ -1,5 +1,6 @@
 const regex_profileFull = /https?:\/\/steamcommunity\.com\/(id|profiles)\/(\w*)\/?/g;
 const regex_onlyName = /^\w*$/;
+const regex_onlyDigits = /^\d+$/;
 var profileName = "";
 var loadingScreenDB = null;
 var lsItems = new Array();
@@ -57,7 +58,6 @@ function GetInventoryURL(noError = true) {
     profilelink.value = profileName;
     errors.innerHTML = null;
     dlBt.removeClass('hide');
-    console.log('https://steamcommunity.com/id/' + profileName + '/inventory/json/570/2.json');
   }
 }
 
@@ -70,9 +70,18 @@ function GetLoadingScreens() {
     var dlText = $("#downloadButtonText")
     dlText.text("Reading Steam inventory...");
     fetchingProfile = true;
-    return $.getJSON("https://crossorigin.me/https://steamcommunity.com/id/" + profileName + "/inventory/json/570/2.json", function(data) {
+    var fullProfileURL = "";
+    var match = regex_onlyDigits.exec(profileName);
+    if (match == null) {
+      fullProfileURL = "https://crossorigin.me/https://steamcommunity.com/id/" + profileName + "/inventory/json/570/2.json";
+    } else {
+      fullProfileURL = "https://crossorigin.me/https://steamcommunity.com/inventory/" + profileName + "/570/2";
+    }
+
+    console.log(fullProfileURL);
+    return $.getJSON(fullProfileURL, function(data) {
         if (data.success == true) {
-          $.each(data.rgDescriptions, function(itemid, item) {
+          $.each(match == null ? data.rgDescriptions : data.descriptions, function(itemid, item) {
             var isLoadingScreen = false;
             $.each(item.tags, function(tagid, tag) {
               if (tag.internal_name == "loading_screen") {
@@ -100,7 +109,7 @@ function GetLoadingScreens() {
 }
 
 function StartDownload() {
-  if(fetchingProfile) {
+  if (fetchingProfile) {
     return;
   }
   $('#downloadButton').disabled = true;
@@ -117,8 +126,10 @@ function StartDownload() {
     var zip = new JSZip();
     $.each(lsItems, function(i, ls) {
       if (!(ls in loadingScreenDB)) {
+        console.log("Loading screen " + ls + " not in DB.");
         var errText = "Loading screen " + ls + " not in DB.";
-        $("#erros2").append('<p class="errors">' + errText + '</p>');
+        $("#errors2").append('<p class="errors">' + errText + '</p>');
+        prog++;
         return true;
       }
 
@@ -145,6 +156,7 @@ function process(buffer, zip, name) {
   zip.file(name + '.jpeg', view, {
     binary: true
   });
+
   $("#progresscounter").text("Downloading " + (++prog) + "/" + total);
   if (prog == total) {
     czip = zip;
