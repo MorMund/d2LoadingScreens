@@ -133,3 +133,17 @@ body {
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
 }
+
+.footer {
+	position: fixed;
+  bottom: 0;
+	left: 0;
+	margin-left: 50px;
+}
+
+.footerText {
+	font-size: 130%;
+	margin: 30px;
+	color: #DDDDDD;
+	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+}
