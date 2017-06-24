@@ -1,5 +1,3 @@
-const regex_profileFull = /https?:\/\/steamcommunity\.com\/(id|profiles)\/(\w*)\/?/g;
-const regex_onlyName = /^\w*$/;
 const regex_onlyDigits = /^\d+$/;
 var profileName = "";
 var loadingScreenDB = null;
@@ -18,7 +16,7 @@ $(document).ready(function () {
     });
     RandomizeBackground();
   });
-  GetInventoryURL();
+  GetInventoryURL(true);
 });
 
 function RandomizeBackground() {
@@ -36,32 +34,21 @@ function RandomizeBackground() {
   bgImg.src = 'out/' + bgImgName + '.jpeg';
 }
 
-function GetInventoryURL(noError = true) {
+function GetInventoryURL(noError = false) {
   var dlBt = $('#downloadButton');
   dlBt.addClass("hide");
-  var match = regex_profileFull.exec(profilelink.value);
+  var match = regex_onlyDigits.exec(profilelink.value);
   if (match == null) {
-    match = regex_onlyName.exec(profilelink.value);
-    if (match == null) {
-      if (!noError) {
-        errors.innerHTML = 'Invalid profile name or link.';
-      }
-
-      profileName = '';
-    } else {
-      profileName = match[0];
+    if (!noError || profilelink.value != "") {
+      $("#errors").html('<p>Invalid profile id. If you need help finding your SteamID64 you can checkout <a href="http://steamrep.com/">steamrep.com</a>.</p>')
     }
   } else {
-    profileName = match[2];
+    profileName = profilelink.value;
   }
 
-  if (profileName == '') {
-    if (!noError) {
-      errors.innerHTML = 'Empty or invalid profile name.';
-    }
-  } else {
+  if (profileName != '') {
     profilelink.value = profileName;
-    errors.innerHTML = null;
+      $("#errors").html('');
     dlBt.removeClass('hide');
   }
 }
@@ -70,7 +57,7 @@ function GetInventoryURL(noError = true) {
 function GetLoadingScreens() {
   GetInventoryURL();
   if (profileName == "") {
-    errors.innerHTML = "Empty or invalid profile name.";
+    errors.innerHTML = "Empty or invalid profile id.";
   } else {
     var dlText = $("#downloadButtonText")
     dlText.text("Reading Steam inventory...");
@@ -102,13 +89,13 @@ function GetLoadingScreens() {
           }
         });
       } else {
-        errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your profile is public.";
+        errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your inventory is public.";
         dlText.text("Download your loading screens");
         fetchingProfile = false;
       }
     })
       .error(function () {
-        errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your profile is public.";
+        errors.innerHTML = "Failed to load steam inventory. Check that your given profile name is correct and that your inventory is public.";
         dlText.text("Download your loading screens");
         fetchingProfile = false;
         return false;

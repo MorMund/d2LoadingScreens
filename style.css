@@ -113,6 +113,8 @@ body {
 .errors {
 	color: #DD0000;
 	text-shadow: 4px 4px #111111;
+	text-align: center;
+	font-size: 1.5em;
 }
 
 .downloadprogress {
