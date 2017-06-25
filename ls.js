@@ -92,7 +92,7 @@ function ReadInventory(fullProfileURL) {
 
       if (totalSize > itemsPerRequest * 2) {
         $('#largeProfile').removeClass('hide');
-        $('#largeProfile').text('This may take a few seconds. Items looked at :' + Math.min(totalSize, currentPage * itemsPerRequest) + '/' + totalSize);
+        $('#largeProfile').text('This may take a few seconds. Items looked at: ' + Math.min(totalSize, currentPage * itemsPerRequest) + '/' + totalSize);
       }
 
       $.each(data.descriptions, function (itemid, item) {
@@ -101,13 +101,20 @@ function ReadInventory(fullProfileURL) {
         $.each(item.tags, function (tagid, tag) {
           if (tag.internal_name == 'loading_screen') {
             isLoadingScreen = true;
-          } else if (tag.category == 'Quality' && tag.internal_name != 'unique') {
-            prefix = tag.name;
+          }
+
+          if (tag.category == 'Quality' && tag.internal_name != 'unique') {
+            prefix = tag.localized_tag_name;
           }
         });
 
         if (isLoadingScreen) {
-          lsItems.push(item.name.substring(prefix.length));
+          if (prefix == '') {
+            lsItems.push(item.name);
+          } else {
+            lsItems.push(item.name.substring(prefix.length + 1));
+          }
+
         }
       });
     } else {
@@ -118,8 +125,8 @@ function ReadInventory(fullProfileURL) {
   })
     .done(function () {
       if (moreItems) {
+        console.log('Read page #' + (currentPage++) + ' ' + request);
         ReadInventory(fullProfileURL).done(function () {
-          console.log('Read page #' + (currentPage++));
         });
       } else {
         DownloadImages();
