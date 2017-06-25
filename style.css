@@ -99,6 +99,7 @@ body {
 	margin: 5px;
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .downloadBT:hover {
@@ -128,19 +129,28 @@ body {
 	margin: 30px;
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .footer {
 	position: fixed;
-  bottom: 0;
+  	bottom: 0;
 	left: 0;
 	margin-left: 50px;
 }
 
 .footerText {
-	font-size: 130%;
+	font-size: 2em;
 	margin: 30px;
 	color: #DDDDDD;
+	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.hint {
+	font-size: 1em;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+	color: #666666;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
 }
 

@@ -16,10 +16,10 @@
 	<script src="ls.js"></script>
 	<script>
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-101604494-1', 'auto');
 		ga('send', 'pageview');
@@ -65,8 +65,9 @@
 			<div class="row">
 				<div class="text-center col-xs-12">
 					<button id="downloadButton" class="downloadBT hide" onclick="StartDownload()">
-					<p id="downloadButtonText" class="downloadBTText" >Download your loading screens</p>
-				</button>
+						<p id="downloadButtonText" class="downloadBTText" >Download your loading screens</p>
+					</button>
+					<p class="hint hide hidden-xs" id="largeProfile">This may take a few seconds. </p>
 				</div>
 			</div>
 		</div>
@@ -75,8 +76,7 @@
 			<div class="row">
 				<div class="text-center col-xs-12">
 					<div class="progress" style="height:50px">
-						<div id="progress" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width:10%">
-							3/10
+						<div id="progress" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width:0%">
 						</div>
 					</div>
 					<button id="dlZipBt" class="hide downloadBT" onclick="dlBlob()">
