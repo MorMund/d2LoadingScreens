@@ -30,52 +30,41 @@ body {
 }
 
 .subtitel {
-	color : white;
-	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
-	text-align: center;
-	font-size: 550%;
-	background-clip: text;
-	margin: 0;
-	margin-bottom: 100px;
+    color : white;
+    font-size: 6em;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+	text-align: left;
 }
 
 .titel {
 	background: linear-gradient(to bottom, #220000, #881919);
 	color : transparent;
-	text-align: center;
-	font-size: 700%;
+	text-align: left;
+    font-size: 7em;
 	background-clip: text;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 	margin: 0;
 }
 
-.textcontainer {
-	text-align: center;
-	font-size: 150%;
-}
-
-.bordertop {
-	display: inline-block;
-	background: #3333333;
-	background: rgba(35,35,35,0.6);
+#main.container {
+	background-color: #333333;
+	background-color: rgba(35,35,35,0.6);
+	border-right: 5px;
+	border-left: 5px;
 	border-radius: 5px;
 	border-color: #FFFFFF;
 }
 
-.bordercenter {
-	display: inline-block;
-	background: #3333333;
-	background: rgba(35,35,35,0.6);
-	border-right: 5px;
-	border-left: 5px;
-	border-color: #FFFFFF;
+
+#profile.form-inline {
+	font-size: 2em;
 }
 
 .profilelabel {
 	color: #DDDDDD;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 30px;
 	text-shadow: 4px 4px #111111;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .profileinput {
@@ -83,19 +72,24 @@ body {
 	background-color: #000000;
 	background-color: rgba(255,255,255,0.1);
 	color: #DDDDDD;
-	margin-right: 30px;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 	text-shadow: 4px 4px #111111;
+	vertical-align: middle;
+
 }
 
 .profileInputHint {
 	color: #DDDDDD;
 	text-shadow: 4px 4px #111111;
+	font-size: 4em;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+	text-align: center;
 }
 
 .downloadBT {
 	border-radius: 10px;
 	margin: 10px;
-	font-size: 110%;
+	font-size: 2em;
 	background: linear-gradient(to bottom, #081a07, #193b1e,#1a3d1d);
 	border-color: transparent;
 	animation: fadein 1s;
@@ -105,6 +99,7 @@ body {
 	margin: 5px;
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .downloadBT:hover {
@@ -119,6 +114,8 @@ body {
 .errors {
 	color: #DD0000;
 	text-shadow: 4px 4px #111111;
+	text-align: center;
+	font-size: 1.5em;
 }
 
 .downloadprogress {
@@ -132,18 +129,40 @@ body {
 	margin: 30px;
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .footer {
 	position: fixed;
-  bottom: 0;
+  	bottom: 0;
 	left: 0;
 	margin-left: 50px;
 }
 
 .footerText {
-	font-size: 130%;
+	font-size: 2em;
 	margin: 30px;
 	color: #DDDDDD;
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.hint {
+	font-size: 1em;
+	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+	color: #666666;
+	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+}
+
+@media (max-width: 767px) {
+  .subtitel {
+	  	text-align: center;
+  }
+  .titel {
+	  text-align: center;
+  }
+  .profileinput {
+	  display: block;
+	  margin : 0 auto;
+  }
 }
