@@ -38,11 +38,9 @@ body {
 }
 
 .titel {
-	background: linear-gradient(to bottom, #220000, #881919);
-	color : transparent;
+	color : #580101;
 	text-align: left;
     font-size: 7em;
-	background-clip: text;
 	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 	margin: 0;
 }
