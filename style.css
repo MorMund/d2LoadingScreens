@@ -6,8 +6,26 @@
 	z-index: -10;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	background: #000000;
+    background: #000000;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: transparent;
 }
 
 @keyframes fadein {
@@ -54,6 +72,10 @@ body {
 	border-color: #FFFFFF;
 }
 
+#footerInfo.row {
+    background-color: #333333;
+    background-color: rgba(35,35,35,0.6);
+}
 
 #profile.form-inline {
 	font-size: 2em;
@@ -130,20 +152,14 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
-.footer {
-	position: fixed;
-  	bottom: 0;
-	left: 0;
-	margin-left: 50px;
+.footerText {
+    font-size: 2em;
+    margin: 30px;
+    color: #DDDDDD;
+    text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
-.footerText {
-	font-size: 2em;
-	margin: 30px;
-	color: #DDDDDD;
-	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-}
 
 .hint {
 	font-size: 1em;
