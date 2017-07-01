@@ -34,7 +34,7 @@ function RandomizeBackground() {
         console.log('Setting background image : ' + bgImg.src);
         bg.addClass('background-image')
         bg.css('background-image', 'url("' + bgImg.src + '")');
-        $('.footerText').text('Background Image : ' + bgImgName);
+        $('#bgInfo').text('Background Image: ' + bgImgName);
     }
     bgImg.src = 'out/' + bgImgName + '.jpeg';
 }
