@@ -1,4 +1,6 @@
-const regex_onlyDigits = /^\d+$/;
+const regex_steamid64 = /^\d{17}$/;
+const aws = 'https://yvnln1tmk5.execute-api.us-east-2.amazonaws.com/';
+const awsStage = 'Test';
 var profileName = '';
 var loadingScreenDB = null;
 var lsItems = new Array();
@@ -6,12 +8,12 @@ var prog = 0;
 var total = 0;
 var czip;
 var fetchingProfile = false;
-var itemsPerRequest = 350;
+var itemsPerRequest = 500;
 var startID = 0;
 var moreItems = true;
 var currentPage = 1;
 var totalSize = 0;
-//var itemQualitys = ['Standard', 'Inscribed', 'Auspicious', 'Genuine', 'Heroic', 'Frozen', 'Cursed', 'Autographed', 'Base', 'Corrupted', 'Unusual', 'Infused'];
+
 $(document).ready(function () {
     $.getJSON('loadingscreens.json', function (data) {
         console.log(data.length + ' loading screens in database.');
@@ -32,49 +34,67 @@ function RandomizeBackground() {
     bgImg.onload = function () {
         var bg = $('#background-image');
         console.log('Setting background image : ' + bgImg.src);
-        bg.addClass('background-image')
+        bg.addClass('background-image');
         bg.css('background-image', 'url("' + bgImg.src + '")');
         $('#bgInfo').text('Background Image: ' + bgImgName);
-    }
+    };
+
     bgImg.src = 'out/' + bgImgName + '.jpeg';
 }
 
 function GetInventoryURL() {
     var dlBt = $('#downloadButton');
     dlBt.addClass('hide');
-    var val = $('#profilelink').val();
+    var inputVal = $('#profilelink').val();
     profileName = '';
-    var match = regex_onlyDigits.exec(val);
-    if (match == null || val.length != 17) {
-        if (val != '') {
-            $('#errors').html('<p>Invalid profile id. If you need help finding your SteamID64 you can checkout <a href="http://steamrep.com/">steamrep.com</a>.</p>');
-        }
+    var id64match = regex_steamid64.exec(inputVal);
+    if (id64match !== null) {
+        profileName = inputVal;
+        ValidateProfileLink();
     } else {
-        profileName = profilelink.value;
-    }
-
-    if (profileName !== '') {
-        $('#profilelink').val(profileName);
-        $('#errors').html('');
-        dlBt.removeClass('hide');
+        GetSteam64(
+            inputVal,
+            function (steamid) {
+                profileName = steamid;
+                ValidateProfileLink();
+        });
     }
 }
 
+function ValidateProfileLink() {
+    if (profileName !== '') {
+        $('#profilelink').val(profileName);
+        $('#errors').html('');
+        $('#downloadButton').removeClass('hide');
+    } else {
+        $('#errors').html('Invalid profile id.');
+    }
+}
+
+function GetSteam64(accName, callback) {
+    return $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
+        if (data.response.success === 1) {
+            callback(data.response.steamid);
+        } else {
+            callback('');
+        }
+    });
+}
 
 function GetLoadingScreens() {
     GetInventoryURL();
-    if (profileName == '') {
+    if (profileName === '') {
         $('#errors').html('Empty or invalid profile id.');
     } else {
-        var dlText = $('#downloadButtonText')
+        var dlText = $('#downloadButtonText');
         dlText.text('Reading Steam inventory...');
         fetchingProfile = true;
         var fullProfileURL = '';
-        var match = regex_onlyDigits.exec(profileName);
-        if (match == null) {
+        var match = regex_steamid64.exec(profileName);
+        if (match === null) {
             $('#errors').html('Empty or invalid profile id.');
         } else {
-            fullProfileURL = 'https://crossorigin.me/https://steamcommunity.com/inventory/' + profileName + '/570/2?l=english&count=' + itemsPerRequest;
+            fullProfileURL = aws + awsStage + '/' + profileName + '/570/2?l=english&count=' + itemsPerRequest;
         }
 
         console.log(fullProfileURL);
@@ -83,13 +103,13 @@ function GetLoadingScreens() {
 }
 
 function ReadInventory(fullProfileURL) {
-    var dlText = $('#downloadButtonText')
-    var request = fullProfileURL + ((startID != 0) ? '&start_assetid=' + startID : '');
+    var dlText = $('#downloadButtonText');
+    var request = fullProfileURL + (startID !== 0 ? '&start_assetid=' + startID : '');
     return $.getJSON(request, function (data) {
-        if (data.success == true) {
+        if (data.success === 1) {
             // Get last item of page
             startID = data.hasOwnProperty('last_assetid') ? data.last_assetid : 0;
-            moreItems = data.hasOwnProperty('more_items') && (data.more_items == 1);
+            moreItems = data.hasOwnProperty('more_items') && data.more_items === 1;
             totalSize = data.hasOwnProperty('total_inventory_count') ? data.total_inventory_count : 0;
 
             if (totalSize > itemsPerRequest * 2) {
@@ -101,17 +121,17 @@ function ReadInventory(fullProfileURL) {
                 var isLoadingScreen = false;
                 var prefix = '';
                 $.each(item.tags, function (tagid, tag) {
-                    if (tag.internal_name == 'loading_screen') {
+                    if (tag.internal_name === 'loading_screen') {
                         isLoadingScreen = true;
                     }
 
-                    if (tag.category == 'Quality' && tag.internal_name != 'unique') {
+                    if (tag.category === 'Quality' && tag.internal_name !== 'unique') {
                         prefix = tag.localized_tag_name;
                     }
                 });
 
                 if (isLoadingScreen) {
-                    if (prefix == '') {
+                    if (prefix === '') {
                         lsItems.push(item.name);
                     } else {
                         lsItems.push(item.name.substring(prefix.length + 1));
@@ -125,25 +145,25 @@ function ReadInventory(fullProfileURL) {
             fetchingProfile = false;
         }
     })
-      .done(function () {
-          if (moreItems) {
-              console.log('Read page #' + (currentPage++) + ' ' + request);
-              ReadInventory(fullProfileURL).done(function () {
-              });
-          } else {
-              DownloadImages();
-          }
-      })
-      .error(function (jqXHR, textStatus, errorThrown) {
-          $('#errors').html('Failed to load steam inventory. Check that your given profile name is correct and that your inventory is public.');
-          dlText.text('Download your loading screens');
-          fetchingProfile = false;
-          return false;
-      })
+        .done(function () {
+            if (moreItems) {
+                console.log('Read page #' + currentPage++ + ' ' + request);
+                ReadInventory(fullProfileURL).done(function () {
+                });
+            } else {
+                DownloadImages();
+            }
+        })
+        .error(function (jqXHR, textStatus, errorThrown) {
+            $('#errors').html('Failed to load steam inventory. Check that your given profile name is correct and that your inventory is public.');
+            dlText.text('Download your loading screens');
+            fetchingProfile = false;
+            return false;
+        });
 }
 
 function DownloadImages() {
-    if (!lsItems || lsItems.length == 0) {
+    if (!lsItems || lsItems.length === 0) {
         $('#downloadButton').disabled = false;
         return;
     }
@@ -197,10 +217,10 @@ function process(buffer, zip, name) {
 
     var progBar = $('#progress');
     prog++;
-    progBar.attr('aria-valuenow', prog).css('width', (prog * 100.0 / total) + '%');
+    progBar.attr('aria-valuenow', prog).css('width', prog * 100.0 / total + '%');
     progBar.html(prog + '/' + total);
-    console.log(prog + '/' + total + ',' + (prog * 100.0 / total) + '%');
-    if (prog == total) {
+    console.log(prog + '/' + total + ',' + prog * 100.0 / total + '%');
+    if (prog === total) {
         czip = zip;
         dlBlob();
     }
@@ -209,9 +229,9 @@ function process(buffer, zip, name) {
 function dlBlob() {
     czip.generateAsync({
         type: 'blob'
-    }).
-      then(function (content) {
-          saveAs(content, 'loadingScreens.zip');
-          $('#dlZipBt').removeClass('hide');
-      })
+    })
+        .then(function (content) {
+            saveAs(content, 'loadingScreens.zip');
+            $('#dlZipBt').removeClass('hide');
+        });
 }
