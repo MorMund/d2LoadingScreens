@@ -168,6 +168,19 @@ body {
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
 }
 
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+    content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+    float: right; /* adjust as needed */
+    color: grey; /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080"; /* adjust as needed, taken from bootstrap.css */
+}
+
 @media (max-width: 767px) {
   .subtitel {
 	  	text-align: center;

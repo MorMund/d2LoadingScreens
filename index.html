@@ -19,7 +19,7 @@
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-101604494-1', 'auto');
         ga('send', 'pageview');
@@ -40,6 +40,39 @@
             </div>
         </div>
         <div class="hidden-xs" style="height:50px"></div>
+        <!-- Help section -->
+        <div class="panel-group" id="accordion">
+            <!-- Help-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseHelp">
+                            What?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseHelp" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Thats what its
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFaq">
+                            What the faq?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFaq" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        1) ya know it
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Profile select -->
         <div id="downloadsetup">
             <div class="row">
@@ -52,7 +85,7 @@
                     <form class="form-inline" id="profile" action="javascript:void(0);">
                         <label for="profilelink" class="profilelabel hidden-xs">https://steamcommunity.com/id/</label>
                         <div class="form-group">
-                            <input class="form-control profileinput input-lg" type="text" placeholder="76561198021044932" id="profilelink" onchange="GetInventoryURL()">
+                            <input class="form-control profileinput input-lg" type="text" placeholder="steam id or steam64" id="profilelink" onchange="GetInventoryURL()">
                         </div>
                     </form>
                 </div>
