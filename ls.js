@@ -62,6 +62,7 @@ function GetInventoryURL() {
 }
 
 function ValidateProfileLink() {
+    $('#processSteamId').addClass('hide');
     if (profileName !== '') {
         $('#profilelink').val(profileName);
         $('#errors').html('');
@@ -72,6 +73,7 @@ function ValidateProfileLink() {
 }
 
 function GetSteam64(accName, callback) {
+    $('#processSteamId').removeClass('hide');
     return $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
         if (data.response.success === 1) {
             callback(data.response.steamid);
