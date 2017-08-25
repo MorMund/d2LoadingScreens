@@ -1,6 +1,6 @@
 const regex_steamid64 = /^\d{17}$/;
 const aws = 'https://yvnln1tmk5.execute-api.us-east-2.amazonaws.com/';
-const awsStage = 'Test';
+const awsStage = 'prod';
 var profileName = '';
 var loadingScreenDB = null;
 var lsItems = new Array();
