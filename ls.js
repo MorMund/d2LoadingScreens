@@ -59,7 +59,7 @@ function GetInventoryURL() {
             function (steamid) {
                 profileName = steamid;
                 ValidateProfileLink();
-        });
+            });
     }
 }
 
@@ -76,13 +76,16 @@ function ValidateProfileLink() {
 
 function GetSteam64(accName, callback) {
     $('#processSteamId').removeClass('hide');
-    return $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
+    $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
         if (data.response.success === 1) {
             callback(data.response.steamid);
         } else {
             callback('');
         }
-    });
+    })
+        .error(function (jqXHR, textStatus, errorThrown) {
+            callback('');
+        });
 }
 
 function GetLoadingScreens() {
