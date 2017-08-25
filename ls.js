@@ -46,6 +46,8 @@ function GetInventoryURL() {
     var dlBt = $('#downloadButton');
     dlBt.addClass('hide');
     var inputVal = $('#profilelink').val();
+    if (inputVal === '')
+        return;
     profileName = '';
     var id64match = regex_steamid64.exec(inputVal);
     if (id64match !== null) {
