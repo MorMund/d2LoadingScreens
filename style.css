@@ -168,6 +168,23 @@ body {
 	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
 }
 
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    color: #DDDDDD;
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
 @media (max-width: 767px) {
   .subtitel {
 	  	text-align: center;
