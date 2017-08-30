@@ -1,8 +1,9 @@
 const regex_steamid64 = /^\d{17}$/;
 const aws = 'https://yvnln1tmk5.execute-api.us-east-2.amazonaws.com/';
-const awsStage = 'Test';
+const awsStage = 'prod';
 var profileName = '';
 var loadingScreenDB = null;
+var loadingScreenDate = "No update!";
 var lsItems = new Array();
 var prog = 0;
 var total = 0;
@@ -16,9 +17,10 @@ var totalSize = 0;
 
 $(document).ready(function () {
     $.getJSON('loadingscreens.json', function (data) {
-        console.log(data.length + ' loading screens in database.');
+        console.log(data.info.length + ' loading screens in database. Export data : ' + data.dbDate);
         loadingScreenDB = {};
-        $.each(data, function (lsNmbr, loadingscreen) {
+        loadingScreenDate = data.dbDate;
+        $.each(data.info, function (lsNmbr, loadingscreen) {
             loadingScreenDB[loadingscreen.Name] = loadingscreen.ImageLink;
         });
         RandomizeBackground();
@@ -46,6 +48,8 @@ function GetInventoryURL() {
     var dlBt = $('#downloadButton');
     dlBt.addClass('hide');
     var inputVal = $('#profilelink').val();
+    if (inputVal === '')
+        return;
     profileName = '';
     var id64match = regex_steamid64.exec(inputVal);
     if (id64match !== null) {
@@ -57,11 +61,12 @@ function GetInventoryURL() {
             function (steamid) {
                 profileName = steamid;
                 ValidateProfileLink();
-        });
+            });
     }
 }
 
 function ValidateProfileLink() {
+    $('#processSteamId').addClass('hide');
     if (profileName !== '') {
         $('#profilelink').val(profileName);
         $('#errors').html('');
@@ -72,13 +77,19 @@ function ValidateProfileLink() {
 }
 
 function GetSteam64(accName, callback) {
-    return $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
-        if (data.response.success === 1) {
-            callback(data.response.steamid);
-        } else {
-            callback('');
-        }
-    });
+    if (typeof accName !== 'undefined') {
+        $('#processSteamId').removeClass('hide');
+        $.getJSON(aws + awsStage + '/steamid?user=' + accName, function (data) {
+            if (data.response.success === 1) {
+                callback(data.response.steamid);
+            } else {
+                callback('');
+            }
+        })
+            .error(function (jqXHR, textStatus, errorThrown) {
+                callback('');
+            });
+    }
 }
 
 function GetLoadingScreens() {
