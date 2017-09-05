@@ -1,9 +1,9 @@
-.bgcontainer{
-	position:relative;
-	height: 105%;
-	width: 105%;
-	overflow:hidden;
-	z-index: -10;
+.bgcontainer {
+    position: relative;
+    height: 105%;
+    width: 105%;
+    overflow: hidden;
+    z-index: -10;
 }
 
 /* Sticky footer styles
@@ -29,47 +29,52 @@ body {
 }
 
 @keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .background-image {
-	background-repeat:no-repeat;
-	position: fixed;
-	background-size: cover;
-	left:-15px;
-	right:-15px;
-	top:-15px;
-	bottom:-15px;
-	-webkit-filter: blur(5px) brightness(50%);
-	filter: blur(5px) brightness(50%);
-	z-index: -10;
-	animation: fadein 2s;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    -webkit-filter: blur(5px) brightness(50%);
+    filter: blur(5px) brightness(50%);
+    z-index: -10;
+    animation: fadein 2s;
 }
 
 .subtitel {
-    color : white;
+    color: white;
     font-size: 6em;
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-	text-align: left;
+    text-align: left;
 }
 
 .titel {
-	color : #580101;
-	text-align: left;
+    color: #580101;
+    text-align: left;
     font-size: 7em;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-	margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
 }
 
 #main.container {
-	background-color: #333333;
-	background-color: rgba(35,35,35,0.6);
-	border-right: 5px;
-	border-left: 5px;
-	border-radius: 5px;
-	border-color: #FFFFFF;
+    background-color: #333333;
+    background-color: rgba(35,35,35,0.6);
+    border-right: 5px;
+    border-left: 5px;
+    border-radius: 5px;
+    border-color: #FFFFFF;
 }
 
 #footerInfo.row {
@@ -78,78 +83,77 @@ body {
 }
 
 #profile.form-inline {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 .profilelabel {
-	color: #DDDDDD;
-	text-shadow: 4px 4px #111111;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    color: #DDDDDD;
+    text-shadow: 4px 4px #111111;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .profileinput {
-	border-radius: 5px;
-	background-color: #000000;
-	background-color: rgba(255,255,255,0.1);
-	color: #DDDDDD;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-	text-shadow: 4px 4px #111111;
-	vertical-align: middle;
-
+    border-radius: 5px;
+    background-color: #000000;
+    background-color: rgba(255,255,255,0.1);
+    color: #DDDDDD;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 4px 4px #111111;
+    vertical-align: middle;
 }
 
 .profileInputHint {
-	color: #DDDDDD;
-	text-shadow: 4px 4px #111111;
-	font-size: 4em;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-	text-align: center;
+    color: #DDDDDD;
+    text-shadow: 4px 4px #111111;
+    font-size: 4em;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
 }
 
 .downloadBT {
-	border-radius: 10px;
-	margin: 10px;
-	font-size: 2em;
-	background: linear-gradient(to bottom, #081a07, #193b1e,#1a3d1d);
-	border-color: transparent;
-	animation: fadein 1s;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 2em;
+    background: linear-gradient(to bottom, #081a07, #193b1e,#1a3d1d);
+    border-color: transparent;
+    animation: fadein 1s;
 }
 
 .downloadBTText {
-	margin: 5px;
-	color: #DDDDDD;
-	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    margin: 5px;
+    color: #DDDDDD;
+    text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .downloadBT:hover {
-	-webkit-filter: brightness(120%);
-	filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
 }
 
 .hide {
-	display:none;
+    display: none;
 }
 
 .errors {
-	color: #DD0000;
-	text-shadow: 4px 4px #111111;
-	text-align: center;
-	font-size: 1.5em;
+    color: #DD0000;
+    text-shadow: 4px 4px #111111;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .downloadprogress {
-	text-align: center;
-	min-width: 400px;
-	min-height: 100px;
+    text-align: center;
+    min-width: 400px;
+    min-height: 100px;
 }
 
 .progresstext {
-	font-size: 110%;
-	margin: 30px;
-	color: #DDDDDD;
-	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 110%;
+    margin: 30px;
+    color: #DDDDDD;
+    text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
 }
 
 .footerText {
@@ -162,18 +166,19 @@ body {
 
 
 .hint {
-	font-size: 1em;
-	font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
-	color: #666666;
-	text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
+    font-size: 1em;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    color: #666666;
+    text-shadow: -2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;
 }
 
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
     content: "\e114"; /* adjust as needed, taken from bootstrap.css */
-    float: right; /* adjust as needed */
+    float: left; /* adjust as needed */
     color: grey; /* adjust as needed */
+    margin-right: 10px;
 }
 
 .panel-heading .accordion-toggle.collapsed:after {
@@ -188,6 +193,44 @@ body {
     color: #DDDDDD;
 }
 
+.panel-default {
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.panel-body {
+    color: #DDDDDD;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.panel-heading {
+    background-color: #000000;
+    background-color: rgba(255,255,255,0.1) !important;
+    color: #DDDDDD !important;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    font-family: 'Helvetica Neue', Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    border: none !important;
+}
+
+.infoText {
+    font-size: medium;
+}
+
+.faqheading {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.infoImportant {
+    font-weight: bold;
+    color: lightcoral;
+}
+
+#updateInfo {
+    color: lightsalmon;
+}
+
 @keyframes spin {
     from {
         transform: scale(1) rotate(0deg);
@@ -199,14 +242,16 @@ body {
 }
 
 @media (max-width: 767px) {
-  .subtitel {
-	  	text-align: center;
-  }
-  .titel {
-	  text-align: center;
-  }
-  .profileinput {
-	  display: block;
-	  margin : 0 auto;
-  }
+    .subtitel {
+        text-align: center;
+    }
+
+    .titel {
+        text-align: center;
+    }
+
+    .profileinput {
+        display: block;
+        margin: 0 auto;
+    }
 }

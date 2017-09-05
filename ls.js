@@ -1,5 +1,15 @@
 const regex_steamid64 = /^\d{17}$/;
+/*
+Do not use this API endpoint for your own projects! The endpoint is just a CORS proxy for these two valve APIs :
+[Steam inventory] https://steamcommunity.com/inventory/[steamid64]/[gameid(dota2:570)]/2
+    parameters l=language, count=number of items per request (max 500), start_assetid=first item of request (assetid can be found in previous requests)
+[Steamid64 resolver] https://wiki.teamfortress.com/wiki/WebAPI/ResolveVanityURL
+
+Steam API keys are free, the CORS proxy works only for this site and for non-browser applications you don't need a proxy.
+So don't use this API, thanks.
+*/
 const aws = 'https://yvnln1tmk5.execute-api.us-east-2.amazonaws.com/';
+
 const awsStage = 'prod';
 var profileName = '';
 var loadingScreenDB = null;
@@ -20,6 +30,7 @@ $(document).ready(function () {
         console.log(data.info.length + ' loading screens in database. Export data : ' + data.dbDate);
         loadingScreenDB = {};
         loadingScreenDate = data.dbDate;
+        $('#updateInfo').html('Loading screen database last updated on : <i>' + loadingScreenDate + '</i>');
         $.each(data.info, function (lsNmbr, loadingscreen) {
             loadingScreenDB[loadingscreen.Name] = loadingscreen.ImageLink;
         });

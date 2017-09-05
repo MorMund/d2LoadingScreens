@@ -47,13 +47,20 @@
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseHelp">
-                            What?
+                            About this site
                         </a>
                     </h4>
                 </div>
                 <div id="collapseHelp" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Thats what its
+                    <div class="panel-body infoText">
+                        <p>
+                            The Dota 2 loading screen downloader allows you to do exactly what it says on the tin.<br />
+                            It downloads loading screens <b>you own in Dota 2</b> as jpegs in full 1080p.
+                            Simply enter your steam profile name or steamid64, press download and get a zip archive of all the loading screens in your Dota 2 inventory.
+                        </p>
+                        <p class="infoImportant">Make sure your Steam inventory is visible to the public!</p>
+                        <p>For further information check the FAQ.</p>
+                        <p id="updateInfo"></p>
                     </div>
                 </div>
             </div>
@@ -62,13 +69,60 @@
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFaq">
-                            What the faq?
+                            FAQ
                         </a>
                     </h4>
                 </div>
                 <div id="collapseFaq" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        1) ya know it
+                    <div class="panel-body infoText">
+                        <ul>
+                            <li>
+                                <h5 class="faqheading">What’s with the weird URL (deadlysurprise.github.io)? </h5>
+                                <p>
+                                    12-year-old me was bad at picking nicknames and I haven’t gotten any better today so I stuck with DeadlySurprise as my gamer tag.
+                                    Github is a site for hosting source code and allows hosting websites for free.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="faqheading">What’s the point of this?</h5>
+                                <p>
+                                    I like (game) artwork as desktop wallpapers and Dota 2 has some great art in its loading screens.
+                                    But some terrible or boring ones as well so I wanted to easily get only the ones I own.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="faqheading">How does it work?</h5>
+                                <p>
+                                    Most of what powers this site can be found in these repositories: <a href="https://github.com/DeadlySurprise/d2LoadingScreens">Website</a> and <a href="https://github.com/DeadlySurprise/D2LoadingScreenExport">Exporter</a>.<br/>
+                                    If you aren’t interested in source code, in short: The site goes through all the Dota 2 items in your steam inventory and gathers a list of loading screens.
+                                    This list is match by name to a list of loading screen images and packed in to zip file for your convenience.
+                                    The two used valve APIs are described in the comments of <a href="https://github.com/DeadlySurprise/d2LoadingScreens/blob/master/ls.js">ls.js</a>.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="faqheading">Are the images available in higher quality?</h5>
+                                <p>
+                                    The images resolution is pretty much as high as you can get from the game files.
+                                    They can be exported in lossless .png, but without a different image host I cannot provide them here.
+                                    So unless you want to use the exporter yourself or someone provides hosting this is the best you’ll get.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="faqheading">I get a message saying Loading screen [Name of the loading screen] not in DB!</h5>
+                                <p>
+                                    If it’s the Scourge Dominion loading screen, Valve (probably unintentionally) removed its asset from the game so there is nothing I can do about it.<br />
+                                    If it’s any other loading screen see Reporting problems.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="faqheading">Reporting problems</h5>
+                                <p>
+                                    If a problem occurs using the site please open an issue on <a href="https://github.com/DeadlySurprise/d2LoadingScreens/issues">Github issues</a>
+                                    or send me a message on <a href="https://www.reddit.com/message/compose?to=randomName412">Reddit</a>.
+                                    Please include your steam profile name and a description what went wrong.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
