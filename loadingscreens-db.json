@@ -384,6 +384,14 @@
     "FullPath": "panorama/images/loadingscreens/bts_corrupted_lord_loadingscreen1/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12155,
+    "Name": "Barren Survivor Loading screen",
+    "ImageLink": "Barren Survivor Loading screen.jpeg",
+    "Crc32": 3262695129,
+    "Size": 2099332,
+    "FullPath": "panorama/images/loadingscreens/desert_wanderer_desert_wanderer_loading_screen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11660,
     "Name": "Barrier Rogue Loading Screen",
     "ImageLink": "Barrier Rogue Loading Screen.jpeg",
@@ -1352,6 +1360,14 @@
     "FullPath": "panorama/images/loadingscreens/empire_of_the_lightning_lord_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12163,
+    "Name": "Enduring Solitude Loading Screen",
+    "ImageLink": "Enduring Solitude Loading Screen.jpeg",
+    "Crc32": 1330884542,
+    "Size": 2099348,
+    "FullPath": "panorama/images/loadingscreens/haunted_hunting_newhaunted_hunting_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10860,
     "Name": "Engulfing Spike Loading Screen",
     "ImageLink": "Engulfing Spike Loading Screen.jpeg",
@@ -1598,6 +1614,14 @@
     "Crc32": 2196527420,
     "Size": 2099140,
     "FullPath": "panorama/images/loadingscreens/escape_master_loading_screen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12156,
+    "Name": "Exponent of the Endless Stars Loading Screen",
+    "ImageLink": "Exponent of the Endless Stars Loading Screen.jpeg",
+    "Crc32": 3209292517,
+    "Size": 2099380,
+    "FullPath": "panorama/images/loadingscreens/tentacular_conqueror_tentacular_conqueror_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 11283,
@@ -1864,6 +1888,14 @@
     "FullPath": "panorama/images/loadingscreens/artillery_of_the_fortified_fabricator_loading_screen/loadingscreen.vtex_c"
   },
   {
+    "ID": 12160,
+    "Name": "Foulfell Corruptor Loading Screen",
+    "ImageLink": "Foulfell Corruptor Loading Screen.jpeg",
+    "Crc32": 3567356448,
+    "Size": 2099412,
+    "FullPath": "panorama/images/loadingscreens/knight_of_foulfell_terrorblade_knight_of_foulfell_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11569,
     "Name": "Fractured Envoy Loading Screen",
     "ImageLink": "Fractured Envoy Loading Screen.jpeg",
@@ -1974,6 +2006,14 @@
     "Crc32": 1856165368,
     "Size": 2099220,
     "FullPath": "panorama/images/loadingscreens/magnolia_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12164,
+    "Name": "Golden Nirvana Loading Screen",
+    "ImageLink": "Golden Nirvana Loading Screen.jpeg",
+    "Crc32": 516511304,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/golden_nirvana_golden_nirvana_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 10976,
@@ -3368,12 +3408,28 @@
     "FullPath": "panorama/images/loadingscreens/rainmaker_loadingscreen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12161,
+    "Name": "Rambling Fatebender Loading Screen",
+    "ImageLink": "Rambling Fatebender Loading Screen.jpeg",
+    "Crc32": 2404981368,
+    "Size": 2099348,
+    "FullPath": "panorama/images/loadingscreens/gambling_mage_rubick_gambling_mage_loading_screen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11472,
     "Name": "Rancorous Nemesis Loading Screen",
     "ImageLink": "Rancorous Nemesis Loading Screen.jpeg",
     "Crc32": 3460152820,
     "Size": 2099332,
     "FullPath": "panorama/images/loadingscreens/savage_predator_savage_predator_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12165,
+    "Name": "Raucous Gatecrasher Loading Screen",
+    "ImageLink": "Raucous Gatecrasher Loading Screen.jpeg",
+    "Crc32": 3393257612,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/noise_maker_loadingscreen_of_the_noise_maker/loadingscreen.vtex_c"
   },
   {
     "ID": 11296,
@@ -4008,6 +4064,14 @@
     "FullPath": "panorama/images/loadingscreens/es_demon_stone/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12166,
+    "Name": "Stygian Maw Loading Screen",
+    "ImageLink": "Stygian Maw Loading Screen.jpeg",
+    "Crc32": 3111720270,
+    "Size": 2099284,
+    "FullPath": "panorama/images/loadingscreens/conqueror_measurement_loading_screen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 12015,
     "Name": "Submerged Hazard Loading Screen",
     "ImageLink": "Submerged Hazard Loading Screen.jpeg",
@@ -4200,6 +4264,14 @@
     "FullPath": "panorama/images/loadingscreens/dota_keyart_outworlddevourer_loadingscreen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12154,
+    "Name": "The Havoc of Dragon Palace Loading Screen",
+    "ImageLink": "The Havoc of Dragon Palace Loading Screen.jpeg",
+    "Crc32": 219630315,
+    "Size": 2099428,
+    "FullPath": "panorama/images/loadingscreens/the_havoc_of_dragon_palacesix_ear_the_havoc_of_dragon_palacesix_ear/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11513,
     "Name": "The International 2016 Loading Screen",
     "ImageLink": "The International 2016 Loading Screen.jpeg",
@@ -4230,6 +4302,14 @@
     "Crc32": 3178589437,
     "Size": 2099108,
     "FullPath": "panorama/images/loadingscreens/firefly_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12158,
+    "Name": "The Plaguemonger Loading Screen",
+    "ImageLink": "The Plaguemonger Loading Screen.jpeg",
+    "Crc32": 3482716983,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/the_plaguemonger_plaguemonger_loading_screen/loadingscreen.vtex_c"
   },
   {
     "ID": 11155,
@@ -4318,6 +4398,14 @@
     "Crc32": 2443684012,
     "Size": 2099268,
     "FullPath": "panorama/images/loadingscreens/timekeeper_silver_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12168,
+    "Name": "The Undying Light Loading Screen",
+    "ImageLink": "The Undying Light Loading Screen.jpeg",
+    "Crc32": 141320107,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/the_unbroken_knight_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 11355,

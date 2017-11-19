@@ -193,6 +193,10 @@
       "ImageLink": "Baleful Hollow Loading Screen.jpeg"
     },
     {
+      "Name": "Barren Survivor Loading screen",
+      "ImageLink": "Barren Survivor Loading screen.jpeg"
+    },
+    {
       "Name": "Barrier Rogue Loading Screen",
       "ImageLink": "Barrier Rogue Loading Screen.jpeg"
     },
@@ -677,6 +681,10 @@
       "ImageLink": "Empire of the Lightning Lord Loading Screen.jpeg"
     },
     {
+      "Name": "Enduring Solitude Loading Screen",
+      "ImageLink": "Enduring Solitude Loading Screen.jpeg"
+    },
+    {
       "Name": "Engulfing Spike Loading Screen",
       "ImageLink": "Engulfing Spike Loading Screen.jpeg"
     },
@@ -799,6 +807,10 @@
     {
       "Name": "Exact Marksman Loading Screen",
       "ImageLink": "Exact Marksman Loading Screen.jpeg"
+    },
+    {
+      "Name": "Exponent of the Endless Stars Loading Screen",
+      "ImageLink": "Exponent of the Endless Stars Loading Screen.jpeg"
     },
     {
       "Name": "Eye of the Beholder Loading Screen",
@@ -933,6 +945,10 @@
       "ImageLink": "Fortified Fabricator Loading Screen.jpeg"
     },
     {
+      "Name": "Foulfell Corruptor Loading Screen",
+      "ImageLink": "Foulfell Corruptor Loading Screen.jpeg"
+    },
+    {
       "Name": "Fractured Envoy Loading Screen",
       "ImageLink": "Fractured Envoy Loading Screen.jpeg"
     },
@@ -987,6 +1003,10 @@
     {
       "Name": "Glacial Magnolia Loading Screen",
       "ImageLink": "Glacial Magnolia Loading Screen.jpeg"
+    },
+    {
+      "Name": "Golden Nirvana Loading Screen",
+      "ImageLink": "Golden Nirvana Loading Screen.jpeg"
     },
     {
       "Name": "Good Day Sir",
@@ -1685,8 +1705,16 @@
       "ImageLink": "Rainmaker Loading Screen.jpeg"
     },
     {
+      "Name": "Rambling Fatebender Loading Screen",
+      "ImageLink": "Rambling Fatebender Loading Screen.jpeg"
+    },
+    {
       "Name": "Rancorous Nemesis Loading Screen",
       "ImageLink": "Rancorous Nemesis Loading Screen.jpeg"
+    },
+    {
+      "Name": "Raucous Gatecrasher Loading Screen",
+      "ImageLink": "Raucous Gatecrasher Loading Screen.jpeg"
     },
     {
       "Name": "Ravening Wings Loading Screen",
@@ -2005,6 +2033,10 @@
       "ImageLink": "Strength of the Demon Stone.jpeg"
     },
     {
+      "Name": "Stygian Maw Loading Screen",
+      "ImageLink": "Stygian Maw Loading Screen.jpeg"
+    },
+    {
       "Name": "Submerged Hazard Loading Screen",
       "ImageLink": "Submerged Hazard Loading Screen.jpeg"
     },
@@ -2101,6 +2133,10 @@
       "ImageLink": "The Harbinger Comes.jpeg"
     },
     {
+      "Name": "The Havoc of Dragon Palace Loading Screen",
+      "ImageLink": "The Havoc of Dragon Palace Loading Screen.jpeg"
+    },
+    {
       "Name": "The International 2016 Loading Screen",
       "ImageLink": "The International 2016 Loading Screen.jpeg"
     },
@@ -2115,6 +2151,10 @@
     {
       "Name": "The Maniacal Machinist Loading Screen",
       "ImageLink": "The Maniacal Machinist Loading Screen.jpeg"
+    },
+    {
+      "Name": "The Plaguemonger Loading Screen",
+      "ImageLink": "The Plaguemonger Loading Screen.jpeg"
     },
     {
       "Name": "The Ram's Head Armaments Loading Screen",
@@ -2159,6 +2199,10 @@
     {
       "Name": "The Timekeeper Silver Loading Screen",
       "ImageLink": "The Timekeeper Silver Loading Screen.jpeg"
+    },
+    {
+      "Name": "The Undying Light Loading Screen",
+      "ImageLink": "The Undying Light Loading Screen.jpeg"
     },
     {
       "Name": "The Wailing Inferno Loading Screen",
@@ -2441,5 +2485,5 @@
       "ImageLink": "YoDota Championship Season 2 Loading Screen.jpeg"
     }
   ],
-  "dbDate": "Wednesday, 30 August, 2017"
+  "dbDate": "Sunday, 19 November 2017"
 }
