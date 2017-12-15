@@ -4966,5 +4966,77 @@
     "Crc32": 367508833,
     "Size": 2099108,
     "FullPath": "panorama/images/loadingscreens/yodota2_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12170,
+    "Name": "Loading Screen of Portent Payload",
+    "ImageLink": "Loading Screen of Portent Payload.jpeg",
+    "Crc32": 986512236,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/gyros_gift_copter_loading_screen_blue_snow/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12036,
+    "Name": "Loading Screen of the Apex Explorer",
+    "ImageLink": "Loading Screen of the Apex Explorer.jpeg",
+    "Crc32": 2539018492,
+    "Size": 2099236,
+    "FullPath": "panorama/images/loadingscreens/owl_rider_loading_screen_v1/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12176,
+    "Name": "Loading Screen of the Bitterwing Legacy",
+    "ImageLink": "Loading Screen of the Bitterwing Legacy.jpeg",
+    "Crc32": 2458168700,
+    "Size": 2099236,
+    "FullPath": "panorama/images/loadingscreens/legacy_of_the_winterwyrm_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12034,
+    "Name": "Loading Screen of the Boilerplate Bruiser",
+    "ImageLink": "Loading Screen of the Boilerplate Bruiser.jpeg",
+    "Crc32": 2507514310,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/stove_guardian_stove_guardian_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12037,
+    "Name": "Loading Screen of the Forgotten Renegade",
+    "ImageLink": "Loading Screen of the Forgotten Renegade.jpeg",
+    "Crc32": 3790520794,
+    "Size": 2099252,
+    "FullPath": "panorama/images/loadingscreens/aesir_lord_odin_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12172,
+    "Name": "Loading Screen of the Iron Hog",
+    "ImageLink": "Loading Screen of the Iron Hog.jpeg",
+    "Crc32": 4204991299,
+    "Size": 2099220,
+    "FullPath": "panorama/images/loadingscreens/pudge_frozen_pig_face_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12175,
+    "Name": "Loading Screen of the Snowpack Savage",
+    "ImageLink": "Loading Screen of the Snowpack Savage.jpeg",
+    "Crc32": 2200184543,
+    "Size": 2099252,
+    "FullPath": "panorama/images/loadingscreens/glacial_terror_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12174,
+    "Name": "Loading Screen of the Stoutheart Growler",
+    "ImageLink": "Loading Screen of the Stoutheart Growler.jpeg",
+    "Crc32": 4099147467,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/legacy_of_the_nords_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12169,
+    "Name": "Loading Screen of the War-Burrow Ravager",
+    "ImageLink": "Loading Screen of the War-Burrow Ravager.jpeg",
+    "Crc32": 813928139,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/elemental_curse_set_elemental_curse_loading/loadingscreen.vtex_c"
   }
 ]
