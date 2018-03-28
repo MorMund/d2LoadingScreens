@@ -1037,6 +1037,10 @@
       "ImageLink": "Hakobi and Tenneko Loading Screen.jpeg"
     },
     {
+      "Name": "Hammer of the Guarded Word Loading Screen",
+      "ImageLink": "Hammer of the Guarded Word Loading Screen.jpeg"
+    },
+    {
       "Name": "Harbinger of War Loading Screen",
       "ImageLink": "Harbinger of War Loading Screen.jpeg"
     },
@@ -1229,6 +1233,10 @@
       "ImageLink": "Loading Screen of Lucid Torment.jpeg"
     },
     {
+      "Name": "Loading Screen of Portent Payload",
+      "ImageLink": "Loading Screen of Portent Payload.jpeg"
+    },
+    {
       "Name": "Loading Screen of Sacred Light",
       "ImageLink": "Loading Screen of Sacred Light.jpeg"
     },
@@ -1249,8 +1257,16 @@
       "ImageLink": "Loading screen of the Antipodeans.jpeg"
     },
     {
+      "Name": "Loading Screen of the Apex Explorer",
+      "ImageLink": "Loading Screen of the Apex Explorer.jpeg"
+    },
+    {
       "Name": "Loading Screen of the Arkturan Talon",
       "ImageLink": "Loading Screen of the Arkturan Talon.jpeg"
+    },
+    {
+      "Name": "Loading Screen of the Bitterwing Legacy",
+      "ImageLink": "Loading Screen of the Bitterwing Legacy.jpeg"
     },
     {
       "Name": "Loading Screen of the Blackguard Magus",
@@ -1263,6 +1279,10 @@
     {
       "Name": "Loading Screen of the Blood Moon",
       "ImageLink": "Loading Screen of the Blood Moon.jpeg"
+    },
+    {
+      "Name": "Loading Screen of the Boilerplate Bruiser",
+      "ImageLink": "Loading Screen of the Boilerplate Bruiser.jpeg"
     },
     {
       "Name": "Loading Screen of the Chainbreaker",
@@ -1329,6 +1349,10 @@
       "ImageLink": "Loading Screen of the First Hunt.jpeg"
     },
     {
+      "Name": "Loading Screen of the Forgotten Renegade",
+      "ImageLink": "Loading Screen of the Forgotten Renegade.jpeg"
+    },
+    {
       "Name": "Loading Screen of the Fractured Order",
       "ImageLink": "Loading Screen of the Fractured Order.jpeg"
     },
@@ -1359,6 +1383,10 @@
     {
       "Name": "Loading Screen of the Infernal Rambler",
       "ImageLink": "Loading Screen of the Infernal Rambler.jpeg"
+    },
+    {
+      "Name": "Loading Screen of the Iron Hog",
+      "ImageLink": "Loading Screen of the Iron Hog.jpeg"
     },
     {
       "Name": "Loading Screen of the Jiang Shi's Revenge",
@@ -1417,8 +1445,16 @@
       "ImageLink": "Loading Screen of the Smoldering Sage.jpeg"
     },
     {
+      "Name": "Loading Screen of the Snowpack Savage",
+      "ImageLink": "Loading Screen of the Snowpack Savage.jpeg"
+    },
+    {
       "Name": "Loading Screen of the Soul Keeper",
       "ImageLink": "Loading Screen of the Soul Keeper.jpeg"
+    },
+    {
+      "Name": "Loading Screen of the Stoutheart Growler",
+      "ImageLink": "Loading Screen of the Stoutheart Growler.jpeg"
     },
     {
       "Name": "Loading Screen of the Survivor",
@@ -1443,6 +1479,10 @@
     {
       "Name": "Loading Screen of the Wandering Flame",
       "ImageLink": "Loading Screen of the Wandering Flame.jpeg"
+    },
+    {
+      "Name": "Loading Screen of the War-Burrow Ravager",
+      "ImageLink": "Loading Screen of the War-Burrow Ravager.jpeg"
     },
     {
       "Name": "Loading Screen of the Witch Hunter Templar",
@@ -1619,6 +1659,10 @@
     {
       "Name": "Onyx Fume Loading Screen",
       "ImageLink": "Onyx Fume Loading Screen.jpeg"
+    },
+    {
+      "Name": "Ornate Cruelty Loading Screen",
+      "ImageLink": "Ornate Cruelty Loading Screen.jpeg"
     },
     {
       "Name": "Outland Ravager Loading Screen",
@@ -1921,6 +1965,10 @@
       "ImageLink": "Shivshell Crawler Loading Screen.jpeg"
     },
     {
+      "Name": "Siege Engine Loadingscreen",
+      "ImageLink": "Siege Engine Loadingscreen.jpeg"
+    },
+    {
       "Name": "Sinister Lightning Loading Screen",
       "ImageLink": "Sinister Lightning Loading Screen.jpeg"
     },
@@ -2067,6 +2115,10 @@
     {
       "Name": "Team Empire Loading Screen",
       "ImageLink": "Team Empire Loading Screen.jpeg"
+    },
+    {
+      "Name": "Tectonic Implications Loading Screen",
+      "ImageLink": "Tectonic Implications Loading Screen.jpeg"
     },
     {
       "Name": "Tempest's Wrath Loading Screen",
@@ -2483,43 +2535,7 @@
     {
       "Name": "YoDota Championship Season 2 Loading Screen",
       "ImageLink": "YoDota Championship Season 2 Loading Screen.jpeg"
-    },
-    {
-      "Name": "Loading Screen of Portent Payload",
-      "ImageLink": "Loading Screen of Portent Payload.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Apex Explorer",
-      "ImageLink": "Loading Screen of the Apex Explorer.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Bitterwing Legacy",
-      "ImageLink": "Loading Screen of the Bitterwing Legacy.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Boilerplate Bruiser",
-      "ImageLink": "Loading Screen of the Boilerplate Bruiser.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Forgotten Renegade",
-      "ImageLink": "Loading Screen of the Forgotten Renegade.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Iron Hog",
-      "ImageLink": "Loading Screen of the Iron Hog.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Snowpack Savage",
-      "ImageLink": "Loading Screen of the Snowpack Savage.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the Stoutheart Growler",
-      "ImageLink": "Loading Screen of the Stoutheart Growler.jpeg"
-    },
-    {
-      "Name": "Loading Screen of the War-Burrow Ravager",
-      "ImageLink": "Loading Screen of the War-Burrow Ravager.jpeg"
     }
   ],
-  "dbDate": "Friday, 15 December 2017"
+  "dbDate": "28 March 2018"
 }
