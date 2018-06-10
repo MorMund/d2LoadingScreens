@@ -2535,7 +2535,31 @@
     {
       "Name": "YoDota Championship Season 2 Loading Screen",
       "ImageLink": "YoDota Championship Season 2 Loading Screen.jpeg"
+    },
+    {
+      "Name": "Fate Meridian Loading Screen",
+      "ImageLink": "Fate Meridian Loading Screen.jpeg"
+    },
+    {
+      "Name": "Forlorn Descent Loading Screen",
+      "ImageLink": "Forlorn Descent Loading Screen.jpeg"
+    },
+    {
+      "Name": "Pitfall Crusader Loading Screen",
+      "ImageLink": "Pitfall Crusader Loading Screen.jpeg"
+    },
+    {
+      "Name": "Stonemarch Sovereign Loading Screen",
+      "ImageLink": "Stonemarch Sovereign Loading Screen.jpeg"
+    },
+    {
+      "Name": "The Murid Divine Loading Screen",
+      "ImageLink": "The Murid Divine Loading Screen.jpeg"
+    },
+    {
+      "Name": "Vespidun Hunter-Killer Loading Screen",
+      "ImageLink": "Vespidun Hunter-Killer Loading Screen.jpeg"
     }
   ],
-  "dbDate": "28 March 2018"
+  "dbDate": "10 June 2018"
 }
