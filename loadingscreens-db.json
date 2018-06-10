@@ -5070,5 +5070,53 @@
     "Crc32": 367508833,
     "Size": 2099108,
     "FullPath": "panorama/images/loadingscreens/yodota2_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12213,
+    "Name": "Fate Meridian Loading Screen",
+    "ImageLink": "Fate Meridian Loading Screen.jpeg",
+    "Crc32": 1587781525,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_invoker_prism_crystal_spellcaster_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12208,
+    "Name": "Forlorn Descent Loading Screen",
+    "ImageLink": "Forlorn Descent Loading Screen.jpeg",
+    "Crc32": 3479217518,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/ti8_undying_miner_loading_screen_v1/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12207,
+    "Name": "Pitfall Crusader Loading Screen",
+    "ImageLink": "Pitfall Crusader Loading Screen.jpeg",
+    "Crc32": 2296003988,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_pango_abyss_bat_ranger_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12209,
+    "Name": "Stonemarch Sovereign Loading Screen",
+    "ImageLink": "Stonemarch Sovereign Loading Screen.jpeg",
+    "Crc32": 3664474348,
+    "Size": 2099236,
+    "FullPath": "panorama/images/loadingscreens/ti8_wk_stonebeast_armor_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12206,
+    "Name": "The Murid Divine Loading Screen",
+    "ImageLink": "The Murid Divine Loading Screen.jpeg",
+    "Crc32": 2511840605,
+    "Size": 2099332,
+    "FullPath": "panorama/images/loadingscreens/ti8_necro_disaster_of_pestilence_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12205,
+    "Name": "Vespidun Hunter-Killer Loading Screen",
+    "ImageLink": "Vespidun Hunter-Killer Loading Screen.jpeg",
+    "Crc32": 3631080543,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/ti8_gyro_digger_wasp_copter_loading_screen/loadingscreen.vtex_c"
   }
 ]
