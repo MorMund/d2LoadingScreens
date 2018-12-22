@@ -408,6 +408,14 @@
     "FullPath": "panorama/images/loadingscreens/basim_loadingscreen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12523,
+    "Name": "Bastion of the Lionsguard Loading Screen",
+    "ImageLink": "Bastion of the Lionsguard Loading Screen.jpeg",
+    "Crc32": 2167271787,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/lionguards_bastion_loading_screen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11427,
     "Name": "Battle Dress of the Proven Loading Screen",
     "ImageLink": "Battle Dress of the Proven Loading Screen.jpeg",
@@ -960,6 +968,14 @@
     "FullPath": "panorama/images/loadingscreens/cradle_of_lights_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12212,
+    "Name": "Cruelties of the Spiral Bore Loading Screen",
+    "ImageLink": "Cruelties of the Spiral Bore Loading Screen.jpeg",
+    "Crc32": 3829308958,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/ti8_mag_undertyrant_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11103,
     "Name": "Cry of the Battlehawk Loading Screen",
     "ImageLink": "Cry of the Battlehawk Loading Screen.jpeg",
@@ -1262,6 +1278,14 @@
     "Crc32": 2586891404,
     "Size": 2099140,
     "FullPath": "panorama/images/loadingscreens/dragonterror_loading_screen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12216,
+    "Name": "Dread Ascendance Loading Screen",
+    "ImageLink": "Dread Ascendance Loading Screen.jpeg",
+    "Crc32": 1222074427,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_doom_obsidian_overlord_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 10855,
@@ -1696,6 +1720,14 @@
     "FullPath": "panorama/images/loadingscreens/fatal_blossom_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12213,
+    "Name": "Fate Meridian Loading Screen",
+    "ImageLink": "Fate Meridian Loading Screen.jpeg",
+    "Crc32": 1587781525,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_invoker_prism_crystal_spellcaster_ls/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10728,
     "Name": "Father of the Forest Loading Screen",
     "ImageLink": "Father of the Forest Loading Screen.jpeg",
@@ -1766,6 +1798,14 @@
     "Crc32": 1871803391,
     "Size": 2099124,
     "FullPath": "panorama/images/loadingscreens/firedragon_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12269,
+    "Name": "Fires of the Volcanic Guard Loading Screen",
+    "ImageLink": "Fires of the Volcanic Guard Loading Screen.jpeg",
+    "Crc32": 1294192854,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/magma_spirit_magma_spirit_loading_screen/loadingscreen.vtex_c"
   },
   {
     "ID": 10827,
@@ -1878,6 +1918,14 @@
     "Crc32": 2521168517,
     "Size": 2099268,
     "FullPath": "panorama/images/loadingscreens/forgotten_tactician_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12208,
+    "Name": "Forlorn Descent Loading Screen",
+    "ImageLink": "Forlorn Descent Loading Screen.jpeg",
+    "Crc32": 3479217518,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/ti8_undying_miner_loading_screen_v1/loadingscreen.vtex_c"
   },
   {
     "ID": 11631,
@@ -2392,12 +2440,28 @@
     "FullPath": "panorama/images/loadingscreens/dragon_lord_loading_screen/loadingscreen.vtex_c"
   },
   {
+    "ID": 12333,
+    "Name": "Legends of Darkheart Pursuit Loading Screen",
+    "ImageLink": "Legends of Darkheart Pursuit Loading Screen.jpeg",
+    "Crc32": 1660733631,
+    "Size": 2099204,
+    "FullPath": "panorama/images/loadingscreens/endless_nightmare_ls_2/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11609,
     "Name": "Let's Race Loading Screen",
     "ImageLink": "Let's Race Loading Screen.jpeg",
     "Crc32": 685616190,
     "Size": 2099124,
     "FullPath": "panorama/images/loadingscreens/lets_race_loading_screen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12210,
+    "Name": "Loaded Prospects Loading Screen",
+    "ImageLink": "Loaded Prospects Loading Screen.jpeg",
+    "Crc32": 991066465,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_brew_the_tipsy_digger_loading_screen/loadingscreen.vtex_c"
   },
   {
     "ID": 11877,
@@ -3032,6 +3096,14 @@
     "FullPath": "panorama/images/loadingscreens/mage_eraser_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12573,
+    "Name": "Magister of the Narrow Fates Loading Screen",
+    "ImageLink": "Magister of the Narrow Fates Loading Screen.jpeg",
+    "Crc32": 118008237,
+    "Size": 2099252,
+    "FullPath": "panorama/images/loadingscreens/maze_master_loading_screen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10696,
     "Name": "Magnoceri Loading Screen",
     "ImageLink": "Magnoceri Loading Screen.jpeg",
@@ -3158,6 +3230,14 @@
     "Crc32": 4217081904,
     "Size": 2099124,
     "FullPath": "panorama/images/loadingscreens/mini_heroes_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12466,
+    "Name": "Mischief of the Fae Forager Loading Screen",
+    "ImageLink": "Mischief of the Fae Forager Loading Screen.jpeg",
+    "Crc32": 1922681609,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/deathcap_fairy_deathcap_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 10445,
@@ -3352,12 +3432,28 @@
     "FullPath": "panorama/images/loadingscreens/chinese_new_year_quest_line_loading_screen/loadingscreen.vtex_c"
   },
   {
+    "ID": 12204,
+    "Name": "Pattern of the Silken Queen Loading Screen",
+    "ImageLink": "Pattern of the Silken Queen Loading Screen.jpeg",
+    "Crc32": 2660669912,
+    "Size": 2099348,
+    "FullPath": "panorama/images/loadingscreens/the_great_arachne_loadingscreen_the_great_arachne/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10979,
     "Name": "Phantasm",
     "ImageLink": "Phantasm.jpeg",
     "Crc32": 861422301,
     "Size": 2099076,
     "FullPath": "panorama/images/loadingscreens/artgerm_pa/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12207,
+    "Name": "Pitfall Crusader Loading Screen",
+    "ImageLink": "Pitfall Crusader Loading Screen.jpeg",
+    "Crc32": 2296003988,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/ti8_pango_abyss_bat_ranger_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 12026,
@@ -3752,6 +3848,14 @@
     "FullPath": "panorama/images/loadingscreens/samurai_soul_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12500,
+    "Name": "Sanction of the Winged Harvest Loading Screen",
+    "ImageLink": "Sanction of the Winged Harvest Loading Screen.jpeg",
+    "Crc32": 2962921607,
+    "Size": 2099332,
+    "FullPath": "panorama/images/loadingscreens/soul_reaper_loadingscreen_of_soul_reaper/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10466,
     "Name": "Sands of Luxor Loading Screen",
     "ImageLink": "Sands of Luxor Loading Screen.jpeg",
@@ -3864,6 +3968,14 @@
     "FullPath": "panorama/images/loadingscreens/emerald_ocean_loading_screen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12300,
+    "Name": "Shackles of the Enduring Conscript Loading Screen",
+    "ImageLink": "Shackles of the Enduring Conscript Loading Screen.jpeg",
+    "Crc32": 237599840,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/ti8_axe_violent_prisoner_of_war_ls/loadingscreen.vtex_c"
+  },
+  {
     "ID": 10665,
     "Name": "Shadow Flame Loading Screen",
     "ImageLink": "Shadow Flame Loading Screen.jpeg",
@@ -3918,6 +4030,14 @@
     "Crc32": 4008135891,
     "Size": 2099156,
     "FullPath": "panorama/images/loadingscreens/esl_nether_star_loading_screen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12243,
+    "Name": "Shimmer of the Anointed Loading Screen",
+    "ImageLink": "Shimmer of the Anointed Loading Screen.jpeg",
+    "Crc32": 546264187,
+    "Size": 2099348,
+    "FullPath": "panorama/images/loadingscreens/ti8_nyx_death_blossom_death_blossom_loading_screen/loadingscreen.vtex_c"
   },
   {
     "ID": 11079,
@@ -4134,6 +4254,14 @@
     "Crc32": 1381309054,
     "Size": 2099092,
     "FullPath": "panorama/images/loadingscreens/stonehall_loading/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12209,
+    "Name": "Stonemarch Sovereign Loading Screen",
+    "ImageLink": "Stonemarch Sovereign Loading Screen.jpeg",
+    "Crc32": 3664474348,
+    "Size": 2099236,
+    "FullPath": "panorama/images/loadingscreens/ti8_wk_stonebeast_armor_ls/loadingscreen.vtex_c"
   },
   {
     "ID": 10554,
@@ -4406,6 +4534,14 @@
     "Crc32": 3178589437,
     "Size": 2099108,
     "FullPath": "panorama/images/loadingscreens/firefly_loadingscreen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12206,
+    "Name": "The Murid Divine Loading Screen",
+    "ImageLink": "The Murid Divine Loading Screen.jpeg",
+    "Crc32": 2511840605,
+    "Size": 2099332,
+    "FullPath": "panorama/images/loadingscreens/ti8_necro_disaster_of_pestilence_loadingscreen/loadingscreen.vtex_c"
   },
   {
     "ID": 12158,
@@ -4688,6 +4824,14 @@
     "FullPath": "panorama/images/loadingscreens/twinblades_loadingscreen/loadingscreen_tga.vtex_c"
   },
   {
+    "ID": 12335,
+    "Name": "Twisted Maelstrom Loading Screen",
+    "ImageLink": "Twisted Maelstrom Loading Screen.jpeg",
+    "Crc32": 4208289211,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/absolute_zero_absolute_zero_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
     "ID": 11088,
     "Name": "Umbra Rider Loading Screen",
     "ImageLink": "Umbra Rider Loading Screen.jpeg",
@@ -4782,6 +4926,14 @@
     "Crc32": 4188595720,
     "Size": 2099156,
     "FullPath": "panorama/images/loadingscreens/vespertine_guard_loading_screen/loadingscreen_tga.vtex_c"
+  },
+  {
+    "ID": 12205,
+    "Name": "Vespidun Hunter-Killer Loading Screen",
+    "ImageLink": "Vespidun Hunter-Killer Loading Screen.jpeg",
+    "Crc32": 3631080543,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/ti8_gyro_digger_wasp_copter_loading_screen/loadingscreen.vtex_c"
   },
   {
     "ID": 10463,
@@ -5072,51 +5224,115 @@
     "FullPath": "panorama/images/loadingscreens/yodota2_loadingscreen/loadingscreen_tga.vtex_c"
   },
   {
-    "ID": 12213,
-    "Name": "Fate Meridian Loading Screen",
-    "ImageLink": "Fate Meridian Loading Screen.jpeg",
-    "Crc32": 1587781525,
-    "Size": 2099300,
-    "FullPath": "panorama/images/loadingscreens/ti8_invoker_prism_crystal_spellcaster_ls/loadingscreen.vtex_c"
-  },
-  {
-    "ID": 12208,
-    "Name": "Forlorn Descent Loading Screen",
-    "ImageLink": "Forlorn Descent Loading Screen.jpeg",
-    "Crc32": 3479217518,
+    "ID": 12635,
+    "Name": "Ascendance of the Rime Lord Loading Screen",
+    "ImageLink": "Ascendance of the Rime Lord Loading Screen.jpeg",
+    "Crc32": 4185591496,
     "Size": 2099268,
-    "FullPath": "panorama/images/loadingscreens/ti8_undying_miner_loading_screen_v1/loadingscreen.vtex_c"
+    "FullPath": "panorama/images/loadingscreens/lich_rime_lord_loading_screen/loadingscreen.vtex_c"
   },
   {
-    "ID": 12207,
-    "Name": "Pitfall Crusader Loading Screen",
-    "ImageLink": "Pitfall Crusader Loading Screen.jpeg",
-    "Crc32": 2296003988,
-    "Size": 2099300,
-    "FullPath": "panorama/images/loadingscreens/ti8_pango_abyss_bat_ranger_loadingscreen/loadingscreen.vtex_c"
+    "ID": 12660,
+    "Name": "Bestowments of the Centurion Vanguard Loading Screen",
+    "ImageLink": "Bestowments of the Centurion Vanguard Loading Screen.jpeg",
+    "Crc32": 4227885952,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/maelrawn_falls_loadingscreen/loadingscreen.vtex_c"
   },
   {
-    "ID": 12209,
-    "Name": "Stonemarch Sovereign Loading Screen",
-    "ImageLink": "Stonemarch Sovereign Loading Screen.jpeg",
-    "Crc32": 3664474348,
-    "Size": 2099236,
-    "FullPath": "panorama/images/loadingscreens/ti8_wk_stonebeast_armor_ls/loadingscreen.vtex_c"
-  },
-  {
-    "ID": 12206,
-    "Name": "The Murid Divine Loading Screen",
-    "ImageLink": "The Murid Divine Loading Screen.jpeg",
-    "Crc32": 2511840605,
-    "Size": 2099332,
-    "FullPath": "panorama/images/loadingscreens/ti8_necro_disaster_of_pestilence_loadingscreen/loadingscreen.vtex_c"
-  },
-  {
-    "ID": 12205,
-    "Name": "Vespidun Hunter-Killer Loading Screen",
-    "ImageLink": "Vespidun Hunter-Killer Loading Screen.jpeg",
-    "Crc32": 3631080543,
+    "ID": 12645,
+    "Name": "Creed of the Outlaw Huntsman Loading Screan",
+    "ImageLink": "Creed of the Outlaw Huntsman Loading Screan.jpeg",
+    "Crc32": 2331519355,
     "Size": 2099316,
-    "FullPath": "panorama/images/loadingscreens/ti8_gyro_digger_wasp_copter_loading_screen/loadingscreen.vtex_c"
+    "FullPath": "panorama/images/loadingscreens/desperado_in_the_shade_loading_screan/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12595,
+    "Name": "Cruel Reprisal Loading Screen",
+    "ImageLink": "Cruel Reprisal Loading Screen.jpeg",
+    "Crc32": 2868957857,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/armor_reprisal_reprisal_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12899,
+    "Name": "Frosthaven Loading Screen",
+    "ImageLink": "Frosthaven Loading Screen.jpeg",
+    "Crc32": 2361667846,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/frostivus_2018_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12727,
+    "Name": "Iceplain Ravager Loading Screen",
+    "ImageLink": "Iceplain Ravager Loading Screen.jpeg",
+    "Crc32": 3304235782,
+    "Size": 2099268,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_cent_icehhoof_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12787,
+    "Name": "Loading of the Arctic Hall",
+    "ImageLink": "Loading of the Arctic Hall.jpeg",
+    "Crc32": 619651514,
+    "Size": 2099284,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_lc_frosty_yasha_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12752,
+    "Name": "Loading Screen of the First Night",
+    "ImageLink": "Loading Screen of the First Night.jpeg",
+    "Crc32": 1979617892,
+    "Size": 2099332,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_ench_daughter_of_winter_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12852,
+    "Name": "Loading Screen of the Trailblazer",
+    "ImageLink": "Loading Screen of the Trailblazer.jpeg",
+    "Crc32": 3676402129,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_timber_timberzil_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12443,
+    "Name": "Pledge of the Dragon's Disciple Loading Screen",
+    "ImageLink": "Pledge of the Dragon's Disciple Loading Screen.jpeg",
+    "Crc32": 2293019939,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/anti_mage_dragon_fury_loading_screen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12563,
+    "Name": "Plunder of the Savage Monger Loading Screen",
+    "ImageLink": "Plunder of the Savage Monger Loading Screen.jpeg",
+    "Crc32": 133137223,
+    "Size": 2099252,
+    "FullPath": "panorama/images/loadingscreens/lord_of_war_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12838,
+    "Name": "Powdersled Rookery Loading Screen",
+    "ImageLink": "Powdersled Rookery Loading Screen.jpeg",
+    "Crc32": 259289371,
+    "Size": 2099316,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_techies_squad_penguins_ls/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12654,
+    "Name": "The Corruption of Nezzureem Loading Screen",
+    "ImageLink": "The Corruption of Nezzureem Loading Screen.jpeg",
+    "Crc32": 1603783288,
+    "Size": 2099300,
+    "FullPath": "panorama/images/loadingscreens/shards_of_nezzureem_loadingscreen/loadingscreen.vtex_c"
+  },
+  {
+    "ID": 12732,
+    "Name": "The Iron Pioneer Loading Screen",
+    "ImageLink": "The Iron Pioneer Loading Screen.jpeg",
+    "Crc32": 1293739585,
+    "Size": 2099284,
+    "FullPath": "panorama/images/loadingscreens/frostivus2018_lighter_fighter_ls/loadingscreen.vtex_c"
   }
 ]
